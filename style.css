@@ -1,0 +1,142 @@
+/* 🎨 LOGIN PAGE STYLING (Affects only content inside <main>) */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #dbeafe, #f1f5f9);
+  min-height: 80vh;
+}
+
+main .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main .login-box {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+main .login-box h1 {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+main .login-box .subtitle {
+  color: #64748b;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* Input fields */
+main .input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+main .input-group label {
+  display: block;
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+main .input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Remember me + forgot password */
+main .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+main .options label {
+  color: #475569;
+}
+
+main .options a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+main .options a:hover {
+  color: #1e40af;
+}
+
+/* Login Button */
+main .btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+main .btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Register link */
+main .register-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #475569;
+}
+
+main .register-link a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main .register-link a:hover {
+  color: #1e40af;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  main .login-box {
+    padding: 30px 25px;
+  }
+
+  main .login-box h1 {
+    font-size: 24px;
+  }
+}
