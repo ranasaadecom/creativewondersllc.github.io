@@ -526,6 +526,161 @@
 .search-button i {
   font-size: 18px;
 }
+/* 🌐 FULL MOBILE RESPONSIVE STYLES */
+@media (max-width: 600px) {
+
+  /* ===== BODY LAYOUT ===== */
+  body {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  /* ===== SEARCH BAR ===== */
+  .search-box {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .search-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .search-button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  /* ===== NAVBAR ===== */
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-item {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  /* Hide dropdowns unless tapped */
+  .dropdown-menu,
+  .second-dropdown {
+    position: static;
+    box-shadow: none;
+    background: #334155;
+    width: 100%;
+  }
+
+  /* ===== PRODUCTS SECTION ===== */
+  .products-section {
+    padding: 25px 15px;
+  }
+
+  .slogan {
+    font-size: 30px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 15px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .footer-left,
+  .footer-columns {
+    width: 100%;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+✅ What this mobile section fixes:
+Header stacks vertically with logo → search bar → button
+
+Navbar collapses into vertical links
+
+Product grid becomes 1 column
+
+Buttons become full width for easier tapping
+
+Footer reorganizes neatly into stacked blocks
+
+Would you like me to make this responsive for tablets too (up to 992px) — so it looks great on iPads and small laptops as well?
+
+
+
+
+
+
+
 
 
 
@@ -840,6 +995,7 @@
 </body>
 
 </html>
+
 
 
 
