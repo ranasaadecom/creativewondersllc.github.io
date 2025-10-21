@@ -130,13 +130,75 @@ main .register-link a:hover {
   color: #1e40af;
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
+/* 🌐 Responsive Design */
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+  main {
+    padding: 40px 15px;
+  }
+
   main .login-box {
-    padding: 30px 25px;
+    padding: 35px 30px;
+    max-width: 90%;
   }
 
   main .login-box h1 {
     font-size: 24px;
+  }
+
+  main .login-box .subtitle {
+    font-size: 14px;
+  }
+
+  main .btn {
+    padding: 14px 0;
+    font-size: 15px;
+  }
+}
+
+/* 📱 Mobile Phones */
+@media (max-width: 480px) {
+  main {
+    padding: 30px 10px;
+  }
+
+  main .login-box {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  main .login-box h1 {
+    font-size: 22px;
+  }
+
+  main .login-box .subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  main .input-group label {
+    font-size: 13px;
+  }
+
+  main .input-group input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  main .options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main .btn {
+    font-size: 15px;
+    padding: 12px 0;
+  }
+
+  main .register-link {
+    font-size: 13px;
+    margin-top: 15px;
   }
 }
