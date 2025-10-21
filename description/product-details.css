@@ -116,3 +116,69 @@ main .back-link a:hover {
     text-align: center;
   }
 }
+
+/* 📱 Responsive for Mobile Phones */
+@media (max-width: 480px) {
+  main.product-detail-container {
+    padding: 30px 5%;
+  }
+
+  main .product-detail-card {
+    padding: 20px;
+    gap: 25px;
+    border-radius: 12px;
+  }
+
+  main .image-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  main .info-section {
+    text-align: center;
+  }
+
+  main .product-name {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  main .product-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  main .product-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  main .quantity-container {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  main .quantity-container input {
+    width: 50px;
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  main .add-to-cart {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  main .back-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  main .back-link a {
+    font-size: 14px;
+  }
+}
+
