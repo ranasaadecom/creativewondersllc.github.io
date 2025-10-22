@@ -528,6 +528,154 @@
 }
 
 
+/* 📱 MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+
+  /* Header adjustments */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .search-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  /* Navbar becomes scrollable horizontally */
+  .navbar {
+    padding: 10px 15px;
+    overflow-x: auto;
+  }
+
+  .nav-list {
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Dropdown fix for touch devices */
+  .dropdown-menu,
+  .second-dropdown {
+    position: static;
+    display: block;
+    box-shadow: none;
+    background: none;
+    padding-left: 15px;
+  }
+
+  /* Product grid → 2 columns */
+  .products-section {
+    padding: 30px 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .product-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .product-card img {
+    height: 140px;
+  }
+
+  .product-title {
+    font-size: 15px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .add-to-cart {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  /* Slogan smaller */
+  .slogan {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  /* Footer stacks vertically */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 20px;
+  }
+
+  .footer-left,
+  .footer-columns {
+    width: 100%;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+
+/* 📱 Extra small screens (phones under 480px) */
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slogan {
+    font-size: 22px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .search-button {
+    padding: 8px 10px;
+  }
+}
 
 
   </style>
@@ -725,5 +873,6 @@
 
 
 </style>
+
 
 
