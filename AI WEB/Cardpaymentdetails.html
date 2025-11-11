@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creative Wonders LLC</title>
+<link rel="icon" href="./img/logo.png" type="image/png" />
+<!-- Favicon as shown in the screenshot -->
+<link rel="icon" href="https://cdn.prym.com/media/favicon/default/prym_favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./CSS/Cardpaymentdetails.css">
+</head>
+<body>
+
+<!-- Top announcement bar -->
+<div class="top-bar">
+  Creative deals that make you wonder!
+</div>
+
+<!-- Country selector bar -->
+<div class="country-bar">
+  United States (USD $) 
+  <select aria-label="Select Country">
+    <option>United States (USD $)</option>
+    <option>Canada (CAD $)</option>
+    <option>Mexico (MXN $)</option>
+  </select>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="./img/logo.png" alt="Prym Consumer USA Logo" />
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="What are you looking for?" aria-label="Site search" />
+    <button aria-label="Search button">
+      <svg viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27a6.518 6.518 0 001.48-5.34C15.07 6.16 12.21 3.3 8.54 3.3c-3.66 0-6.52 2.86-6.52 6.52 0 3.67 2.86 6.52 6.52 6.52a6.52 6.52 0 005.34-1.48l.27.28v.79l4.25 4.25 1.27-1.27L15.5 14zm-7 0a4.91 4.91 0 01-4.91-4.91 4.91 4.91 0 014.91-4.91A4.91 4.91 0 0113.41 9.1c0 2.71-2.2 4.9-4.91 4.9z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="account-links">
+    <a id="registerBtn" aria-label="Register for Account">Register for Account</a>
+  <a id="loginBtn" aria-label="Login to your account">Login</a>
+    <a href="./Cart.html" style="text-decoration:none;">
+  <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 18a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0zM3 6h2l3 9h11l3-9H7"></path>
+    </svg>
+  </div>
+</a>
+
+  </div>
+
+
+
+
+  <!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalBox">
+    <span class="close-modal" id="closeModal">&times;</span>
+
+    <!-- Register Form -->
+    <div id="registerForm">
+      <h2>Register Yourself</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p class="toggle-link" id="toLogin">Already have an account? Login</p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" style="display:none;">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="toggle-link" id="toRegister">Don't have an account? Register</p>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- Navigation menu -->
+<!-- <nav class="main-nav" aria-label="Primary Navigation">
+  <ul>
+    <li>
+      Products
+      <ul>
+        <li>Sub Product 1</li>
+        <li>Sub Product 2</li>
+        <li>Sub Product 3</li>
+      </ul>
+    </li>
+    <li><a href="#">Store Support</a></li>
+    <li><a href="#">Dress Form Program</a></li>
+    <li><a href="#">Subscribe</a></li>
+  </ul>
+</nav> -->
+
+
+<!-- WWW -->
+   <!-- main nav -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <div class="nav-item" tabindex="0">Products
+            <div class="mega" role="menu" aria-hidden="true">
+              <div class="colwrap">
+                <div class="col">
+                  <h4>Categories</h4>
+                  <a href="#">Pet supplies</a>
+                  <a href="#">Home Decor</a>
+                  <a href="#">Kitchen Gadgets</a>
+                  <!-- <a href="#">Fasteners & Closures</a> -->
+                </div>
+                <div class="col">
+                  <!-- <h4>Accessories</h4> -->
+                  <a href="#">Health & Wellness</a>
+                  <a href="#">Kids & Baby</a>
+                  <a href="#">Snacks</a>
+                  <!-- <a href="#">Cutting Mats</a> -->
+                </div>
+                <div class="col">
+                  <!-- <h4>Brands</h4> -->
+                  <a href="#">Tools & Accesories</a>
+                  <a href="#">Beauty</a>
+                  <!-- <a href="#">Prym</a> -->
+                  <!-- <a href="#">Others</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="index.html"><div class="nav-item">Home</div></a>
+<a href="About_Us.html"><div class="nav-item">About Us</div></a>
+<a href="FAQs.html"><div class="nav-item">FAQs</div></a>
+          <!-- <div class="nav-item">Subscribe</div> -->
+        </div>
+
+        <div style="margin-left:auto;color:var(--muted);font-weight:600">Free shipping on orders over $60</div>
+      </nav>
+      <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+ <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+  <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+
+
+
+
+<div class="payment-wrapper">
+  <h2 class="pay-title">Pay with</h2>
+
+  <div class="pay-box">
+    
+
+    <!-- Card Form -->
+    <div class="card-form">
+      <label>Card Number</label>
+      <div class="card-input">
+        <input id="card-number" type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+        <div class="card-logos">
+          <img src="https://img.icons8.com/color/48/visa.png" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" />
+          <img src="https://img.icons8.com/color/48/amex.png" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Expiration</label>
+          <input id="exp-date" type="text" placeholder="MM / YY" maxlength="5">
+        </div>
+        <div>
+          <label>CVC</label>
+          <input id="cvc" type="text" placeholder="CVC" maxlength="3">
+        </div>
+      </div>
+
+      <label>Billing Address</label>
+      <input type="text" placeholder="Full Name, Street, City, State, Zip">
+    </div>
+
+    <!-- Bank Option -->
+    <label class="pay-option selected">
+      <input type="radio" name="payment-method" checked>
+      Credit or Debit Card
+    </label>
+  </div>
+
+  <button class="review-order-btn">Pay</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- ===================OFFICIAL F0OTER SECTION ==================-->
+ <!-- ===================OFFICIAL F0OTER SECTION ==================-->
+  <!-- ===================OFFICIAL F0OTER SECTION ==================-->
+
+<div class="footer-container" style="display:flex; align-items:center; justify-content:space-between; width:100%; padding:20px 40px;">
+
+  <!-- Left Logo -->
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="Creative Wonders Logo" style="height:90px; object-fit:contain;" />
+  </div>
+
+  <!-- Newsletter + Links (Center) -->
+  <div style="flex:1; text-align:center;">
+
+    <section class="newsletter-subscribe" aria-label="Newsletter Subscription">
+      <p><strong>Stay in the loop! Do not miss out on product updates and promotions.</strong></p>
+      <form>
+        <label for="email" class="visually-hidden">Email Address *</label>
+        <input type="email" id="email" placeholder="Email Address *" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <nav aria-label="Footer Quicklinks">
+        <ul style="display:flex; gap:25px; justify-content:center;">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contact Us</a>
+            <dd style="margin-left:0;">30 North Gould Steet 54002, Sheridan Wyoming 82801, US<br>info@creativewondersllc.com</dd>
+          </li>
+        </ul>
+      </nav>
+      <small>Copyright © 2025 Creative Wonders LLC all rights reserved!</small>
+    </footer>
+
+  </div>
+
+  <!-- Right Logo (Correct Position) -->
+  <div>
+    <img class="Rightlogo" src="img/bddemologo.png" alt="BD Demo Logo" style="height:90px; object-fit:contain; margin-left:20px;" />
+  </div>
+
+</div>
+
+  
+<!-- Footer currency selector -->
+<div class="currency-selector">
+  United States (USD $)
+  <select aria-label="Select Currency">
+    <option>United States (USD $)</option>
+    <option>Canada (CAD $)</option>
+    <option>Mexico (MXN $)</option>
+  </select>
+</div>
+
+
+<!-- SCRIPT TAG -->
+<script src="script.js"></script>
+<script>
+// CARD NUMBER FORMATTER
+document.getElementById("card-number").addEventListener("input", function (e) {
+  let value = e.target.value.replace(/\D/g, ""); // Remove non-digits
+  value = value.substring(0, 16); // Max 16 digits
+  value = value.replace(/(.{4})/g, "$1 ").trim(); // Add space every 4 digits
+  e.target.value = value;
+});
+
+// EXPIRATION DATE FORMATTER (MM/YY)
+document.getElementById("exp-date").addEventListener("input", function (e) {
+  let value = e.target.value.replace(/\D/g, ""); // Only digits
+  if (value.length > 2) {
+    value = value.substring(0, 4); // Max 4 digits (MMYY)
+    value = value.replace(/(\d{2})(\d{1,2})/, "$1/$2"); // Insert slash
+  }
+  e.target.value = value;
+});
+
+// CVC FORMATTER
+document.getElementById("cvc").addEventListener("input", function (e) {
+  e.target.value = e.target.value.replace(/\D/g, "").substring(0, 3);
+});
+</script>
+<!-- PAYMENT POPUP -->
+<div id="paymentPopup" class="payment-popup">
+  <div class="popup-box" id="popupBox">
+    <span class="close-popup" id="closePopup">&times;</span>
+    <div class="loader" id="loader"></div>
+    <div class="success-check" id="successCheck">✔</div>
+    <p id="paymentMessage">Processing Payment...</p>
+  </div>
+</div>
+
+<script>
+
+// ENABLE PAY BUTTON ONLY WHEN ALL FIELDS ARE FILLED
+const cardNumberInput = document.getElementById("card-number");
+const expDateInput = document.getElementById("exp-date");
+const cvcInput = document.getElementById("cvc");
+const billingInput = document.querySelector(".card-form input[placeholder='Full Name, Street, City, State, Zip']");
+const payBtn = document.querySelector(".review-order-btn");
+
+// 🔒 Disable initially
+payBtn.disabled = true;
+payBtn.style.opacity = "0.6";
+payBtn.style.cursor = "not-allowed";
+
+function validatePaymentForm() {
+  const cardOk = cardNumberInput.value.replace(/\s/g, "").length === 16;
+  const expOk = expDateInput.value.length === 5;
+  const cvcOk = cvcInput.value.length === 3;
+  const addrOk = billingInput.value.trim() !== "";
+
+  if (cardOk && expOk && cvcOk && addrOk) {
+    payBtn.disabled = false;
+    payBtn.style.opacity = "1";
+    payBtn.style.cursor = "pointer";
+  } else {
+    payBtn.disabled = true;
+    payBtn.style.opacity = "0.6";
+    payBtn.style.cursor = "not-allowed";
+  }
+}
+
+// Validate on input and on load
+[cardNumberInput, expDateInput, cvcInput, billingInput].forEach(input => {
+  input.addEventListener("input", validatePaymentForm);
+});
+validatePaymentForm();
+
+// CARD INPUT FORMATTING
+cardNumberInput.addEventListener("input", function (e) {
+  let v = e.target.value.replace(/\D/g, "").slice(0, 16);
+  e.target.value = v.replace(/(.{4})/g, "$1 ").trim();
+});
+
+expDateInput.addEventListener("input", function (e) {
+  let v = e.target.value.replace(/\D/g, "").slice(0,4);
+  if (v.length > 2) v = v.replace(/(\d{2})(\d{1,2})/, "$1/$2");
+  e.target.value = v;
+});
+
+cvcInput.addEventListener("input", function (e) {
+  e.target.value = e.target.value.replace(/\D/g, "").slice(0, 3);
+});
+
+// PAYMENT POPUP FUNCTIONALITY
+document.querySelector(".review-order-btn").addEventListener("click", function () {
+  // 🚫 Hard guard: do nothing if disabled
+  if (payBtn.disabled) return;
+
+  const popup = document.getElementById("paymentPopup");
+  popup.style.display = "flex";
+
+  // Reset popup visuals
+  document.getElementById("loader").style.display = "block";
+  document.getElementById("successCheck").style.display = "none";
+  document.getElementById("closePopup").style.display = "none";
+  document.getElementById("paymentMessage").textContent = "Processing Payment...";
+
+  // After 4 seconds → success
+  setTimeout(() => {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("successCheck").style.display = "flex";
+    document.getElementById("paymentMessage").textContent =
+      "Payment Successful! You will receive a confirmation email shortly.";
+
+    // ✅ Clear Cart Data
+    localStorage.removeItem("cart");
+
+    // ✅ Clear Billing Page Fields
+    document.querySelectorAll(".billing-form input").forEach(input => input.value = "");
+
+    // ✅ Clear Card Inputs
+    cardNumberInput.value = "";
+    expDateInput.value = "";
+    cvcInput.value = "";
+    billingInput.value = "";
+
+    // ✅ Disable Pay Button Again
+    validatePaymentForm();
+
+    // ✅ Show close button now
+    document.getElementById("closePopup").style.display = "flex";
+
+    // ✅ Redirect to homepage after 3 seconds
+    setTimeout(() => {
+      window.location.href = "index.html"; // Change if your homepage file name is different
+    }, 3000);
+
+  }, 4000);
+});
+
+// Close with X (only after success)
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("paymentPopup").style.display = "none";
+});
+
+// Close when clicking outside
+document.getElementById("paymentPopup").addEventListener("click", function (e) {
+  if (e.target.id === "paymentPopup") {
+    document.getElementById("paymentPopup").style.display = "none";
+  }
+});
+
+</script>
+
+
+
+<!-- SCRIPT TAG -->
+<script src="script.js"></script>
+<script src="seachscript.js"></script>
+
+
+
+</body>
+</html>

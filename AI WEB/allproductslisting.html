@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creative Wonders LLC</title>
+<link rel="icon" href="./img/logo.png" type="image/png" />
+<!-- Favicon as shown in the screenshot -->
+<link rel="icon" href="https://cdn.prym.com/media/favicon/default/prym_favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./CSS/allproductslisting.css">
+
+</head>
+<body>
+
+<!-- Top announcement bar -->
+<div class="top-bar">
+  Creative deals that make you wonder!
+</div>
+
+<!-- Country selector bar -->
+<div class="country-bar">
+  United States (USD $) 
+  <select aria-label="Select Country">
+    <option>United States (USD $)</option>
+    <option>Canada (CAD $)</option>
+    <option>Mexico (MXN $)</option>
+  </select>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="./img/logo.png" alt="Prym Consumer USA Logo" />
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="What are you looking for?" aria-label="Site search" />
+    <button aria-label="Search button">
+      <svg viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27a6.518 6.518 0 001.48-5.34C15.07 6.16 12.21 3.3 8.54 3.3c-3.66 0-6.52 2.86-6.52 6.52 0 3.67 2.86 6.52 6.52 6.52a6.52 6.52 0 005.34-1.48l.27.28v.79l4.25 4.25 1.27-1.27L15.5 14zm-7 0a4.91 4.91 0 01-4.91-4.91 4.91 4.91 0 014.91-4.91A4.91 4.91 0 0113.41 9.1c0 2.71-2.2 4.9-4.91 4.9z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="account-links">
+    <a id="registerBtn" aria-label="Register for Account">Register for Account</a>
+  <a id="loginBtn" aria-label="Login to your account">Login</a>
+    <a href="./Cart.html" style="text-decoration:none;">
+  <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 18a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0zM3 6h2l3 9h11l3-9H7"></path>
+    </svg>
+  </div>
+</a>
+
+  </div>
+
+
+
+
+  <!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalBox">
+    <span class="close-modal" id="closeModal">&times;</span>
+
+    <!-- Register Form -->
+    <div id="registerForm">
+      <h2>Register Yourself</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p class="toggle-link" id="toLogin">Already have an account? Login</p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" style="display:none;">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="toggle-link" id="toRegister">Don't have an account? Register</p>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- Navigation menu -->
+<!-- <nav class="main-nav" aria-label="Primary Navigation">
+  <ul>
+    <li>
+      Products
+      <ul>
+        <li>Sub Product 1</li>
+        <li>Sub Product 2</li>
+        <li>Sub Product 3</li>
+      </ul>
+    </li>
+    <li><a href="#">Store Support</a></li>
+    <li><a href="#">Dress Form Program</a></li>
+    <li><a href="#">Subscribe</a></li>
+  </ul>
+</nav> -->
+
+
+<!-- WWW -->
+   <!-- main nav -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <div class="nav-item" tabindex="0">Products
+            <div class="mega" role="menu" aria-hidden="true">
+              <div class="colwrap">
+                <div class="col">
+                  <h4>Categories</h4>
+                  <a href="#">Pet supplies</a>
+                  <a href="#">Home Decor</a>
+                  <a href="#">Kitchen Gadgets</a>
+                  <!-- <a href="#">Fasteners & Closures</a> -->
+                </div>
+                <div class="col">
+                  <!-- <h4>Accessories</h4> -->
+                  <a href="#">Health & Wellness</a>
+                  <a href="#">Kids & Baby</a>
+                  <a href="#">Snacks</a>
+                  <!-- <a href="#">Cutting Mats</a> -->
+                </div>
+                <div class="col">
+                  <!-- <h4>Brands</h4> -->
+                  <a href="#">Tools & Accesories</a>
+                  <a href="#">Beauty</a>
+                  <!-- <a href="#">Prym</a> -->
+                  <!-- <a href="#">Others</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="index.html"><div class="nav-item">Home</div></a>
+<a href="About_Us.html"><div class="nav-item">About Us</div></a>
+<a href="FAQs.html"><div class="nav-item">FAQs</div></a>
+          <!-- <div class="nav-item">Subscribe</div> -->
+        </div>
+
+        <div style="margin-left:auto;color:var(--muted);font-weight:600">Free shipping on orders over $60</div>
+      </nav>
+      <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+ <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+  <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html" aria-current="false">Home</a> &gt; <span aria-current="page">Products</span>
+  </nav>
+
+  <main>
+    <h1 class="page-title">Listings</h1>
+    <div class="container">
+      <!-- Filters -->
+      <aside class="filters" aria-label="Product filters">
+  <h2>Filters</h2>
+
+  <section class="filter-group" aria-label="Filter by Category">
+    <div class="filter-group-header">
+      <span>Category</span>
+      <span class="toggle-icon" role="button" tabindex="0" aria-expanded="true" aria-controls="category-filters">−</span>
+    </div>
+    <div id="category-filters">
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="all" checked> All Products</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Pet supplies"> Pet Supplies</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Home Decor"> Home Decor</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Kitchen Gadgets"> Kitchen Gadgets</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Health & Wellness"> Health & Wellness</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Kids & Baby"> Kids & Baby</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Snacks"> Snacks</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Tools & Accessories"> Tools & Accessories</label></div>
+      <div class="filter-checkbox"><label><input type="checkbox" class="filter-category" value="Beauty"> Beauty</label></div>
+    </div>
+  </section>
+</aside>
+
+
+      <!-- Listings -->
+      <section class="listings" aria-label="Product listings">
+        <div class="sort-view-bar">
+          <div class="sort-by" aria-label="Sort products">
+            <label for="sort-select" style="font-weight:600; margin-right: 8px;">Sort by</label>
+            <select id="sort-select" aria-controls="product-list">
+              <option value="best-selling" selected>Best selling</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+          <div class="view-as" role="group" aria-label="Toggle view mode">
+            <span style="font-weight: 600;">View as</span>
+            <button id="btn-grid-view" class="selected" aria-pressed="true" aria-label="View as grid">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              Grid
+            </button>
+            <button id="btn-list-view" aria-pressed="false" aria-label="View as list">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+              List
+            </button>
+          </div>
+        </div>
+
+        <!-- Product listing container -->
+        <div id="product-list" role="list">
+          <!-- Product items inserted by JS -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+<!-- ===================OFFICIAL F0OTER SECTION ==================-->
+ <!-- ===================OFFICIAL F0OTER SECTION ==================-->
+  <!-- ===================OFFICIAL F0OTER SECTION ==================-->
+
+<div class="footer-container" style="display:flex; align-items:center; justify-content:space-between; width:100%; padding:20px 40px;">
+
+  <!-- Left Logo -->
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="Creative Wonders Logo" style="height:90px; object-fit:contain;" />
+  </div>
+
+  <!-- Newsletter + Links (Center) -->
+  <div style="flex:1; text-align:center;">
+
+    <section class="newsletter-subscribe" aria-label="Newsletter Subscription">
+      <p><strong>Stay in the loop! Do not miss out on product updates and promotions.</strong></p>
+      <form>
+        <label for="email" class="visually-hidden">Email Address *</label>
+        <input type="email" id="email" placeholder="Email Address *" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <nav aria-label="Footer Quicklinks">
+        <ul style="display:flex; gap:25px; justify-content:center;">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contact Us</a>
+            <dd style="margin-left:0;">30 North Gould Steet 54002, Sheridan Wyoming 82801, US<br>info@creativewondersllc.com</dd>
+          </li>
+        </ul>
+      </nav>
+      <small>Copyright © 2025 Creative Wonders LLC all rights reserved!</small>
+    </footer>
+
+  </div>
+
+  <!-- Right Logo (Correct Position) -->
+  <div>
+    <img class="Rightlogo" src="img/bddemologo.png" alt="BD Demo Logo" style="height:90px; object-fit:contain; margin-left:20px;" />
+  </div>
+
+</div>
+
+  
+<!-- Footer currency selector -->
+<div class="currency-selector">
+  United States (USD $)
+  <select aria-label="Select Currency">
+    <option>United States (USD $)</option>
+    <option>Canada (CAD $)</option>
+    <option>Mexico (MXN $)</option>
+  </select>
+</div>
+
+
+
+<!-- Quick Shop Modal -->
+<div class="quickshop-overlay" id="quickshop-overlay">
+  <div class="quickshop-modal">
+    <button class="qs-close" id="qs-close">&times;</button>
+
+    <div class="qs-left">
+      <img id="qs-main-img" src="" alt="Product Image" class="qs-main-img">
+      <div class="qs-thumbs">
+        <img src="" alt="thumb1" class="qs-thumb" id="qs-thumb1">
+        <img src="" alt="thumb2" class="qs-thumb" id="qs-thumb2">
+        <img src="" alt="thumb3" class="qs-thumb" id="qs-thumb3">
+      </div>
+    </div>
+
+    <div class="qs-right">
+      <h2 id="qs-title"></h2>
+      <p id="qs-desc"></p>
+      <h3 id="qs-price"></h3>
+
+      <label for="qs-qty" style="font-weight:600;">Quantity:</label>
+      <input type="number" id="qs-qty" min="1" max="10" value="1">
+
+      <!-- <button class="qs-add-btn" id="qs-add-btn">Add to Cart</button> -->
+      <button class="add-to-cart-btn add-to-cart qs-add-btn">
+        Add to Cart
+</button>
+
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT TAG -->
+<script src="script.js"></script>
+<script>
+  
+const products = [
+  { id: 1, title: "KONG Classic Stuffable Dog Toy - Fetch & Chew Durable Rubber", description: "A strong chew toy made from durable rubber that can be stuffed with treats to keep dogs mentally stimulated and active.", price: "$14.99", image: "img/topcategories/petsupplies/product1/m.jpg", thumbs: ["img/topcategories/petsupplies/product1/a.jpg","img/topcategories/petsupplies/product1/b.jpg","img/topcategories/petsupplies/product1/c.jpg"], category: "Pet supplies" },
+  { id: 2, title: "Greenies Large Dental Dog Treats, 3-Flavor Variety Pack", description: "Dental treats that help clean teeth and freshen breath while offering dogs a flavorful chewing experience.", price: "$29.48", image: "img/topcategories/petsupplies/product2/m.jpg", thumbs: ["img/topcategories/petsupplies/product2/a.jpg","img/topcategories/petsupplies/product2/b.jpg","img/topcategories/petsupplies/product2/c.jpg"], category: "Pet supplies" },
+  { id: 3, title: "Catit Flower Fountain with Triple Action Filter", description: "A cute flower-style water fountain that encourages cats to drink more by providing fresh, continuously filtered water.", price: "$24.95", image: "img/topcategories/petsupplies/product3/m.jpg", thumbs: ["img/topcategories/petsupplies/product3/a.jpg","img/topcategories/petsupplies/product3/b.jpg","img/topcategories/petsupplies/product3/c.jpg"], category: "Pet supplies" },
+
+  { id: 4, title: "Mkono Macrame Wall Hanging Large Boho Home Decor", description: "Handcrafted macrame wall art that adds a natural, cozy, boho aesthetic to any living space.", price: "$19.99", image: "img/topcategories/homedecor/product1/m.jpg", thumbs: ["img/topcategories/homedecor/product1/a.jpg","img/topcategories/homedecor/product1/b.jpg","img/topcategories/homedecor/product1/c.jpg"], category: "Home Decor" },
+  { id: 5, title: "HAMRVL COB LED Strip Lights, 16.4ft Green, DC12V", description: "Flexible COB LED light strip providing smooth, bright illumination for creative room décor or accent lighting.", price: "$32.99", image: "img/topcategories/homedecor/product2/m.jpg", thumbs: ["img/topcategories/homedecor/product2/a.jpg","img/topcategories/homedecor/product2/b.jpg","img/topcategories/homedecor/product2/c.jpg"], category: "Home Decor" },
+  { id: 6, title: "SAFAVIEH Chelsea Collection Accent Rug 1'8\" x 2'6\"", description: "A beautifully patterned accent rug that adds warmth and style to entryways, hallways, or corners.", price: "$31.09", image: "img/topcategories/homedecor/product3/m.jpg", thumbs: ["img/topcategories/homedecor/product3/a.jpg","img/topcategories/homedecor/product3/b.jpg","img/topcategories/homedecor/product3/c.jpg"], category: "Home Decor" },
+
+  { id: 7, title: "Ninja Foodi 5-in-1 Indoor Grill (Grill, Air Fry, Roast)", description: "A versatile indoor cooking device that grills, air fries, roasts, and more with fast heat and great flavor.", price: "$149.95", image: "img/topcategories/kitchengadgets/product1/m.jpg", thumbs: ["img/topcategories/kitchengadgets/product1/a.jpg","img/topcategories/kitchengadgets/product1/b.jpg","img/topcategories/kitchengadgets/product1/c.jpg"], category: "Kitchen Gadgets" },
+  { id: 8, title: "OXO Good Grips 3-Piece Peeler Set", description: "Ergonomic peelers with stainless steel blades for easy and comfortable peeling of fruits and vegetables.", price: "$13.99", image: "img/topcategories/kitchengadgets/product2/m.jpg", thumbs: ["img/topcategories/kitchengadgets/product2/a.jpg","img/topcategories/kitchengadgets/product2/b.jpg","img/topcategories/kitchengadgets/product2/c.jpg"], category: "Kitchen Gadgets" },
+  { id: 9, title: "DASH Mini Waffle Maker, 4\" Nonstick", description: "A compact waffle maker ideal for making quick, single-serving waffles or creative breakfast snacks.", price: "$12.99", image: "img/topcategories/kitchengadgets/product3/m.jpg", thumbs: ["img/topcategories/kitchengadgets/product3/a.jpg","img/topcategories/kitchengadgets/product3/b.jpg","img/topcategories/kitchengadgets/product3/c.jpg"], category: "Kitchen Gadgets" },
+
+  { id: 10, title: "Vitruvi White Stone Essential Oil Diffuser", description: "A modern stone diffuser that gently releases essential oils to create a calm and aromatic atmosphere.", price: "$119.99", image: "img/topcategories/healthandwellness/product1/m.jpg", thumbs: ["img/topcategories/healthandwellness/product1/a.jpg","img/topcategories/healthandwellness/product1/b.jpg","img/topcategories/healthandwellness/product1/c.jpg"], category: "Health & Wellness" },
+  { id: 11, title: "Fitbit Charge 5 Fitness & Health Tracker", description: "A smart fitness tracker offering heart monitoring, sleep tracking, GPS, and daily health insights.", price: "$164.30", image: "img/topcategories/healthandwellness/product2/m.jpg", thumbs: ["img/topcategories/healthandwellness/product2/a.jpg","img/topcategories/healthandwellness/product2/b.jpg","img/topcategories/healthandwellness/product2/c.jpg"], category: "Health & Wellness" },
+  { id: 12, title: "Pattern Wellness Ashwagandha Complex Supplement", description: "A daily herbal supplement formulated to support balanced mood, stress relief, and overall wellness.", price: "$38.95", image: "img/topcategories/healthandwellness/product3/m.jpg", thumbs: ["img/topcategories/healthandwellness/product3/a.jpg","img/topcategories/healthandwellness/product3/b.jpg","img/topcategories/healthandwellness/product3/c.jpg"], category: "Health & Wellness" },
+
+  { id: 13, title: "Skip Hop Baby 3-Piece Travel Essentials Set", description: "A convenient baby travel set designed for easy on-the-go care and organization.", price: "$39.98", image: "img/topcategories/kidsandbaby/product1/m.jpg", thumbs: ["img/topcategories/kidsandbaby/product1/m.jpg","img/topcategories/kidsandbaby/product1/m.jpg","img/topcategories/kidsandbaby/product1/m.jpg"], category: "Kids & Baby" },
+  { id: 14, title: "LeapFrog Learning Friends 100 Words Book", description: "An interactive educational book that teaches kids vocabulary with sounds and engaging activities.", price: "$19.97", image: "img/topcategories/kidsandbaby/product2/m.jpg", thumbs: ["img/topcategories/kidsandbaby/product2/a.jpg","img/topcategories/kidsandbaby/product2/b.jpg","img/topcategories/kidsandbaby/product2/c.jpg"], category: "Kids & Baby" },
+  { id: 15, title: "Little Tikes Cozy Coupe Dinosaur", description: "A fun dinosaur-themed ride-on car that encourages active play and imagination.", price: "$64.99", image: "img/topcategories/kidsandbaby/product3/m.jpg", thumbs: ["img/topcategories/kidsandbaby/product3/a.jpg","img/topcategories/kidsandbaby/product3/b.jpg","img/topcategories/kidsandbaby/product3/c.jpg"], category: "Kids & Baby" },
+
+  { id: 16, title: "KIND Nut Bars, Dark Chocolate Nuts and Sea Salt, 12 Count", description: "Wholesome snack bars made with real nuts, dark chocolate, and balanced sweet-salty flavor.", price: "$10.94", image: "img/topcategories/snacks/product1/m.jpg", thumbs: ["img/topcategories/snacks/product1/a.jpg","img/topcategories/snacks/product1/b.jpg","img/topcategories/snacks/product1/c.jpg"], category: "Snacks" },
+  { id: 17, title: "Popcornopolis Popcorn, Zebra, 24 Ounce", description: "Gourmet caramel and chocolate striped popcorn with a crunchy, sweet flavor.", price: "$11.96", image: "img/topcategories/snacks/product2/m.jpg", thumbs: ["img/topcategories/snacks/product2/a.jpg","img/topcategories/snacks/product2/b.jpg","img/topcategories/snacks/product2/c.jpg"], category: "Snacks" },
+  { id: 18, title: "Dang Keto Toasted Coconut Chips", description: "Crispy toasted coconut chips that are naturally sweet, keto-friendly, and snack-ready.", price: "$4.99", image: "img/topcategories/snacks/product3/m.jpg", thumbs: ["img/topcategories/snacks/product3/m.jpg","img/topcategories/snacks/product3/a.jpg","img/topcategories/snacks/product3/m.jpg"], category: "Snacks" },
+
+  { id: 19, title: "DEWALT 20V Max Cordless Drill/Driver Kit (DCD771C2)", description: "A compact and powerful cordless drill with two rechargeable batteries for reliable performance.", price: "$129.00", image: "img/topcategories/toolsandaccessories/product1/m.jpg", thumbs: ["img/topcategories/toolsandaccessories/product1/a.jpg","img/topcategories/toolsandaccessories/product1/b.jpg","img/topcategories/toolsandaccessories/product1/c.jpg"], category: "Tools & Accessories" },
+  { id: 20, title: "65 Piece Home Basic Repair Tool Kit Set With Bag", description: "A complete household tool kit suitable for quick repairs and everyday maintenance.", price: "$65.57", image: "img/topcategories/toolsandaccessories/product2/m.jpg", thumbs: ["img/topcategories/toolsandaccessories/product2/a.jpg","img/topcategories/toolsandaccessories/product2/b.jpg","img/topcategories/toolsandaccessories/product2/c.jpg"], category: "Tools & Accessories" },
+  { id: 21, title: "RYOBI ONE+ 18V Cordless 1/4 in. Impact Driver (Tool Only)", description: "A lightweight cordless impact driver offering strong power for fastening and drilling tasks.", price: "$46", image: "img/topcategories/toolsandaccessories/product3/m.jpg", thumbs: ["img/topcategories/toolsandaccessories/product3/m.jpg","img/topcategories/toolsandaccessories/product3/a.jpg","img/topcategories/toolsandaccessories/product3/m.jpg"], category: "Tools & Accessories" },
+
+  { id: 22, title: "Olaplex No. 3 Hair Perfector Repairing Treatment", description: "A salon-grade hair treatment that strengthens damaged hair and restores smoothness and shine.", price: "$30", image: "img/topcategories/beauty/product1/m.jpg", thumbs: ["img/topcategories/beauty/product1/a.jpg","img/topcategories/beauty/product1/b.jpg","img/topcategories/beauty/product1/m.jpg"], category: "Beauty" },
+  { id: 23, title: "CeraVe Hydrating Facial Cleanser for Dry Skin", description: "A gentle face cleanser that hydrates while removing dirt without stripping skin moisture.", price: "$15.97", image: "img/topcategories/beauty/product2/m.jpg", thumbs: ["img/topcategories/beauty/product2/a.jpg","img/topcategories/beauty/product2/b.jpg","img/topcategories/beauty/product2/c.jpg"], category: "Beauty" },
+  { id: 24, title: "REVLON One-Step Volumizer Hair Dryer and Styler", description: "A 2-in-1 hot air brush that dries and volumizes hair for fast, salon-style blowouts at home.", price: "$30.97", image: "img/topcategories/beauty/product3/m.jpg", thumbs: ["img/topcategories/beauty/product3/a.jpg","img/topcategories/beauty/product3/b.jpg","img/topcategories/beauty/product3/b.jpg"], category: "Beauty" }
+];
+
+const productList = document.getElementById("product-list");
+
+function createProductCardListView(product) {
+  const card = document.createElement("div");
+  card.className = "product-card";
+  card.setAttribute("role", "listitem");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", product.title + ", " + product.price);
+  card.dataset.id = product.id;
+  card.innerHTML = `
+      <div class="product-image">
+        <img src="${product.image}" alt="${product.title}" loading="lazy" />
+      </div>
+      <div class="product-info">
+        <h3>${product.title}</h3>
+        <p>${product.description}</p>
+      </div>
+      <div class="product-price">${product.price}</div>
+      <button class="quick-shop-btn" aria-label="Quick shop for ${product.title}">Quick shop</button>
+      <div class="heart-icon" tabindex="0" role="button" aria-label="Add ${product.title} to favorites">&#10084;</div>
+    `;
+  return card;
+}
+
+function createProductCardGridView(product) {
+  const card = document.createElement("div");
+  card.className = "product-card grid-card";
+  card.setAttribute("role", "listitem");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", product.title + ", " + product.price);
+  card.dataset.id = product.id;
+  card.style.flexDirection = "column";
+  card.style.alignItems = "stretch";
+  card.style.maxWidth = "280px";
+  card.innerHTML = `
+      <div class="product-image" style="width:100%; margin-bottom: 10px;">
+        <img src="${product.image}" alt="${product.title}" loading="lazy" style="width:100%; height:auto;"/>
+      </div>
+      <div class="product-info" style="flex-grow:1;">
+        <h3 style="font-size: 16px; margin-bottom: 6px;">${product.title}</h3>
+        <p style="font-size: 13px; margin-bottom: 12px;">${product.description}</p>
+      </div>
+      <div style="display:flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+        <div class="product-price" style="margin-left: 0; font-size: 16px;">${product.price}</div>
+        <button class="quick-shop-btn" aria-label="Quick shop for ${product.title}" style="padding: 7px 14px; font-size: 14px;">Quick shop</button>
+      </div>
+    `;
+  return card;
+}
+
+let currentView = "list";
+
+function renderProducts() {
+  productList.innerHTML = "";
+  for(let i = 0; i < products.length; i++) {
+    let card;
+    if (currentView === "list") {
+      card = createProductCardListView(products[i]);
+    } else {
+      card = createProductCardGridView(products[i]);
+    }
+    productList.appendChild(card);
+  }
+}
+
+function applyFilters() {
+  const selected = [...document.querySelectorAll('.filter-category:checked')]
+      .map(cb => cb.value);
+
+  let filtered = [];
+  if (selected.includes("all") || selected.length === 0) {
+    filtered = products;
+  } else {
+    filtered = products.filter(p => selected.includes(p.category));
+  }
+
+  productList.innerHTML = "";
+  filtered.forEach(p => {
+    const card = currentView === "list"
+      ? createProductCardListView(p)
+      : createProductCardGridView(p);
+    productList.appendChild(card);
+  });
+}
+
+document.querySelectorAll('.filter-category').forEach(cb => {
+  cb.addEventListener("change", () => {
+    if (cb.value === "all" && cb.checked) {
+      document.querySelectorAll('.filter-category').forEach(x => x.checked = false);
+      cb.checked = true;
+    } else {
+      document.querySelector('.filter-category[value="all"]').checked = false;
+    }
+    applyFilters();
+  });
+});
+
+renderProducts();
+
+/* ✅ NEW: AUTO FILTER IF CATEGORY SENT FROM HOME PAGE */
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCategory = urlParams.get("category");
+if (selectedCategory) {
+  document.querySelectorAll('.filter-category').forEach(cb => {
+    cb.checked = (cb.value === selectedCategory);
+  });
+  applyFilters();
+}
+
+/* VIEW TOGGLE */
+const btnGridView = document.getElementById("btn-grid-view");
+const btnListView = document.getElementById("btn-list-view");
+
+btnGridView.addEventListener("click", () => {
+  if (currentView === "grid") return;
+  currentView = "grid";
+  btnGridView.classList.add("selected");
+  btnGridView.setAttribute("aria-pressed", "true");
+  btnListView.classList.remove("selected");
+  btnListView.setAttribute("aria-pressed", "false");
+  productList.style.flexDirection = "row";
+  productList.style.flexWrap = "wrap";
+  productList.style.gap = "30px";
+  renderProducts();
+});
+
+btnListView.addEventListener("click", () => {
+  if (currentView === "list") return;
+  currentView = "list";
+  btnListView.classList.add("selected");
+  btnListView.setAttribute("aria-pressed", "true");
+  btnGridView.classList.remove("selected");
+  btnGridView.setAttribute("aria-pressed", "false");
+  productList.style.flexDirection = "column";
+  productList.style.flexWrap = "nowrap";
+  productList.style.gap = "30px";
+  renderProducts();
+});
+
+/* FILTER ACCORDION */
+const toggles = document.querySelectorAll(".filter-group-header .toggle-icon");
+toggles.forEach(toggle => {
+  toggle.addEventListener("click", () => {
+    const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", !isExpanded);
+    toggle.textContent = isExpanded ? "+" : "−";
+    const targetId = toggle.getAttribute("aria-controls");
+    const content = document.getElementById(targetId);
+    if(content) {
+      content.style.display = isExpanded ? "none" : "block";
+      content.parentElement.setAttribute("aria-expanded", !isExpanded);
+    }
+  });
+  toggle.addEventListener("keydown", (e) => {
+    if(e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggle.click();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.getElementById('quickshop-overlay');
+  const closeBtn = document.getElementById('qs-close');
+  const addBtn = document.querySelector(".qs-add-btn");
+  const mainImg = document.getElementById('qs-main-img');
+  const thumbs = document.querySelectorAll('.qs-thumb');
+  const qtyInput = document.getElementById('qs-qty');
+  const priceEl = document.getElementById('qs-price');
+
+  let basePrice = 0; // store single-item base price
+
+  // When any "Quick Shop" button is clicked
+  document.body.addEventListener('click', (e) => {
+    if (e.target.classList.contains('quick-shop-btn')) {
+      const card = e.target.closest('.product-card');
+      const title = card.querySelector('.product-info h3')?.textContent || 'Product';
+      const desc = card.querySelector('.product-info p')?.textContent || '';
+      const priceText = card.querySelector('.product-price')?.textContent || '$0';
+      const imgSrc = card.querySelector('img')?.src || 'https://via.placeholder.com/400x400';
+
+      // Extract base price as number
+      basePrice = parseFloat(priceText.replace(/[^0-9.]/g, '')) || 0;
+
+      // Reset quantity and display base price
+      qtyInput.value = 1;
+      updateDisplayedPrice();
+
+      // Assign data to modal
+      document.getElementById('qs-title').textContent = title;
+      document.getElementById('qs-desc').textContent = desc;
+      mainImg.src = imgSrc;
+
+   const productId = parseInt(card.dataset.id);
+const productData = products.find(p => p.id === productId);
+overlay.dataset.productId = productId;
+addBtn.dataset.productId = productId;
+
+console.log("SET PRODUCT ID →", productId);
+
+
+// ADDED LINE BY SAAD
+
+// Use product thumbnails if available & hide empty ones
+if (productData && Array.isArray(productData.thumbs)) {
+  thumbs.forEach((t, i) => {
+    if (productData.thumbs[i]) {
+      t.style.display = "inline-block";
+      t.src = productData.thumbs[i];
+    } else {
+      t.style.display = "none"; // Hide unused thumbnail slot
+    }
+  });
+} else {
+  thumbs.forEach(t => t.style.display = "none");
+}
+
+
+      // Store original image to restore later
+      overlay.dataset.originalMain = imgSrc;
+
+      overlay.style.display = 'flex';
+    }
+  });
+
+  // 🔄 Swap main image with thumbnail
+  thumbs.forEach(t => {
+    t.addEventListener('click', () => {
+      const tempSrc = mainImg.src;
+      mainImg.src = t.src;
+      t.src = tempSrc;
+    });
+  });
+
+  // 📈 Update price when quantity changes
+  qtyInput.addEventListener('input', () => {
+    const qty = parseInt(qtyInput.value);
+    if (isNaN(qty) || qty < 1) qtyInput.value = 1;
+    if (qty > 10) qtyInput.value = 10;
+    updateDisplayedPrice();
+  });
+
+  // 💲 Helper to update displayed price
+  function updateDisplayedPrice() {
+    const qty = parseInt(qtyInput.value) || 1;
+    const total = basePrice * qty;
+    priceEl.textContent = `$${total.toFixed(2)}`;
+  }
+
+  // ❌ Close modal + reset
+  closeBtn.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    resetMainImage();
+  });
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.style.display = 'none';
+      resetMainImage();
+    }
+  });
+
+  // ♻️ Reset the main image when modal closes
+  function resetMainImage() {
+    if (overlay.dataset.originalMain) {
+      mainImg.src = overlay.dataset.originalMain;
+    }
+  }
+// 🛒 Add to cart (REAL FUNCTIONALITY USING PRODUCT ID)
+addBtn.addEventListener("click", () => {
+  console.log("ADD TO CART STARTED");
+
+  const qty = parseInt(document.getElementById("qs-qty").value) || 1;
+
+  // ✅ Get the stored product ID set when Quick Shop opened
+  const productId = parseInt(overlay.dataset.productId);
+
+  // ✅ Find product by ID (always correct)
+  const product = products.find(p => p.id === productId);
+
+  if (!product) {
+    console.log("PRODUCT NOT FOUND — CHECK productId or overlay.dataset.productId");
+    return;
+  }
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // ✅ Check if product already in cart
+  const existing = cart.find(item => item.id === product.id);
+
+  if (existing) {
+    existing.quantity += qty;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.title,
+      price: product.price, // keep "$" format exactly
+      image: product.image,
+      quantity: qty
+    });
+  }
+
+  // ✅ Save cart
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  alert(`${qty} × ${product.title} added to cart!`);
+
+  // ✅ Close modal
+  overlay.style.display = "none";
+});
+
+
+
+});
+
+</script>
+<script src="seachscript.js"></script>
+
+</body>
+</html>
+
+

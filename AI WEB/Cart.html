@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creative Wonders LLC</title>
+<link rel="icon" href="./img/logo.png" type="image/png" />
+<!-- Favicon as shown in the screenshot -->
+<link rel="icon" href="https://cdn.prym.com/media/favicon/default/prym_favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./CSS/Cart.css"
+</head>
+<body>
+
+<!-- Top announcement bar -->
+<div class="top-bar">
+  Creative deals that make you wonder!
+</div>
+
+<!-- Country selector bar -->
+<div class="country-bar">
+  United States (USD $) 
+  <select aria-label="Select Country">
+    <option>United States (USD $)</option>
+    <option>Canada (CAD $)</option>
+    <option>Mexico (MXN $)</option>
+  </select>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="./img/logo.png" alt="Prym Consumer USA Logo" />
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="What are you looking for?" aria-label="Site search" />
+    <button aria-label="Search button">
+      <svg viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27a6.518 6.518 0 001.48-5.34C15.07 6.16 12.21 3.3 8.54 3.3c-3.66 0-6.52 2.86-6.52 6.52 0 3.67 2.86 6.52 6.52 6.52a6.52 6.52 0 005.34-1.48l.27.28v.79l4.25 4.25 1.27-1.27L15.5 14zm-7 0a4.91 4.91 0 01-4.91-4.91 4.91 4.91 0 014.91-4.91A4.91 4.91 0 0113.41 9.1c0 2.71-2.2 4.9-4.91 4.9z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="account-links">
+    <a id="registerBtn" aria-label="Register for Account">Register for Account</a>
+  <a id="loginBtn" aria-label="Login to your account">Login</a>
+    <a href="./Cart.html" style="text-decoration:none;">
+  <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 18a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0zM3 6h2l3 9h11l3-9H7"></path>
+    </svg>
+  </div>
+</a>
+
+  </div>
+
+
+
+
+  <!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalBox">
+    <span class="close-modal" id="closeModal">&times;</span>
+
+    <!-- Register Form -->
+    <div id="registerForm">
+      <h2>Register Yourself</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p class="toggle-link" id="toLogin">Already have an account? Login</p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" style="display:none;">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="toggle-link" id="toRegister">Don't have an account? Register</p>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- Navigation menu -->
+<!-- <nav class="main-nav" aria-label="Primary Navigation">
+  <ul>
+    <li>
+      Products
+      <ul>
+        <li>Sub Product 1</li>
+        <li>Sub Product 2</li>
+        <li>Sub Product 3</li>
+      </ul>
+    </li>
+    <li><a href="#">Store Support</a></li>
+    <li><a href="#">Dress Form Program</a></li>
+    <li><a href="#">Subscribe</a></li>
+  </ul>
+</nav> -->
+
+
+<!-- WWW -->
+   <!-- main nav -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <div class="nav-item" tabindex="0">Products
+            <div class="mega" role="menu" aria-hidden="true">
+              <div class="colwrap">
+                <div class="col">
+                  <h4>Categories</h4>
+                  <a href="#">Pet supplies</a>
+                  <a href="#">Home Decor</a>
+                  <a href="#">Kitchen Gadgets</a>
+                  <!-- <a href="#">Fasteners & Closures</a> -->
+                </div>
+                <div class="col">
+                  <!-- <h4>Accessories</h4> -->
+                  <a href="#">Health & Wellness</a>
+                  <a href="#">Kids & Baby</a>
+                  <a href="#">Snacks</a>
+                  <!-- <a href="#">Cutting Mats</a> -->
+                </div>
+                <div class="col">
+                  <!-- <h4>Brands</h4> -->
+                  <a href="#">Tools & Accesories</a>
+                  <a href="#">Beauty</a>
+                  <!-- <a href="#">Prym</a> -->
+                  <!-- <a href="#">Others</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="index.html"><div class="nav-item">Home</div></a>
+<a href="About_Us.html"><div class="nav-item">About Us</div></a>
+<a href="FAQs.html"><div class="nav-item">FAQs</div></a>
+          <!-- <div class="nav-item">Subscribe</div> -->
+        </div>
+
+        <div style="margin-left:auto;color:var(--muted);font-weight:600">Free shipping on orders over $60</div>
+      </nav>
+      <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+ <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+  <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
+</head>
+<body>
+
+<div class="cart-container">
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="cart-body">
+
+    </tbody>
+  </table>
+
+  <div class="cart-actions">
+    <a href="./allproductslisting.html"><button class="cart-btn">Return To Shop</button></a>
+    <button class="cart-btn update-btn" id="updateCart">Update Cart</button>
+  </div>
+
+  <div class="cart-bottom">
+    <div class="coupon-box">
+      <input type="text" placeholder="Coupon Code">
+      <button>Apply Coupon</button>
+    </div>
+
+    <div class="cart-total">
+      <h3>Cart Total</h3>
+      <p><span>Subtotal</span><span id="subtotal">54.00 USD</span></p>
+      <p><span>Shipping</span><span>Free for orders over 60$</span></p>
+      <p><strong>Total</strong><strong id="total">54.00 USD</strong></p>
+      <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ===================OFFICIAL F0OTER SECTION ==================-->
+ <!-- ===================OFFICIAL F0OTER SECTION ==================-->
+  <!-- ===================OFFICIAL F0OTER SECTION ==================-->
+
+<div class="footer-container" style="display:flex; align-items:center; justify-content:space-between; width:100%; padding:20px 40px;">
+
+  <!-- Left Logo -->
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="Creative Wonders Logo" style="height:90px; object-fit:contain;" />
+  </div>
+
+  <!-- Newsletter + Links (Center) -->
+  <div style="flex:1; text-align:center;">
+
+    <section class="newsletter-subscribe" aria-label="Newsletter Subscription">
+      <p><strong>Stay in the loop! Do not miss out on product updates and promotions.</strong></p>
+      <form>
+        <label for="email" class="visually-hidden">Email Address *</label>
+        <input type="email" id="email" placeholder="Email Address *" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <nav aria-label="Footer Quicklinks">
+        <ul style="display:flex; gap:25px; justify-content:center;">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contact Us</a>
+            <dd style="margin-left:0;">30 North Gould Steet 54002, Sheridan Wyoming 82801, US<br>info@creativewondersllc.com</dd>
+          </li>
+        </ul>
+      </nav>
+      <small>Copyright © 2025 Creative Wonders LLC all rights reserved!</small>
+    </footer>
+
+  </div>
+
+  <!-- Right Logo (Correct Position) -->
+  <div>
+    <img class="Rightlogo" src="img/bddemologo.png" alt="BD Demo Logo" style="height:90px; object-fit:contain; margin-left:20px;" />
+  </div>
+
+</div>
+
+  
+<!-- Footer currency selector -->
+<div class="currency-selector">
+  United States (USD $)
+  <select aria-label="Select Currency">
+    <option>United States (USD $)</option>
+    <option>Canada (CAD $)</option>
+    <option>Mexico (MXN $)</option>
+  </select>
+</div>
+
+
+
+
+<!-- SCRIPT TAG -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cartBody = document.getElementById("cart-body");
+  const updateBtn = document.getElementById("updateCart");
+  const subtotalEl = document.getElementById("subtotal");
+  const totalEl = document.getElementById("total");
+  const shippingEl = document.querySelector(".cart-total p:nth-child(2) span:last-child");
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function toNumber(priceString) {
+    return parseFloat(priceString.replace(/[^0-9.]/g, "")) || 0;
+  }
+
+  function renderCart() {
+    cartBody.innerHTML = "";
+    let subtotal = 0;
+
+    if (cart.length === 0) {
+      cartBody.innerHTML = `<tr><td colspan="5" style="text-align:center;">Your cart is empty</td></tr>`;
+      subtotalEl.textContent = "0 USD";
+      shippingEl.textContent = "0 USD";
+      totalEl.textContent = "0 USD";
+      return;
+    }
+
+    cart.forEach((item, index) => {
+      const itemPrice = toNumber(item.price);
+      const itemSubtotal = itemPrice * item.quantity;
+      subtotal += itemSubtotal;
+
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td class="cart-item">
+          <img src="${item.image}" alt="${item.name}">
+          <span class="cart-item-title">${item.name}</span>
+        </td>
+        <td>${item.price}</td>
+        <td>
+          <div class="qty-control">
+            <button class="qty-btn decrease" data-index="${index}">-</button>
+            <input class="qty-input" type="number" min="1" max="10" value="${item.quantity}" data-index="${index}">
+            <button class="qty-btn increase" data-index="${index}">+</button>
+          </div>
+        </td>
+        <td>${itemSubtotal.toFixed(2)} USD</td>
+        <td><button class="remove-btn" data-index="${index}">🗑</button></td>
+      `;
+      cartBody.appendChild(row);
+    });
+
+    let shipping = (subtotal < 60 && subtotal > 0) ? 5 : 0;
+    shippingEl.textContent = shipping > 0 ? `${shipping.toFixed(2)} USD` : "Free";
+
+    subtotalEl.textContent = subtotal.toFixed(2) + " USD";
+    totalEl.textContent = (subtotal + shipping).toFixed(2) + " USD";
+  }
+
+  document.addEventListener("click", e => {
+    if (e.target.classList.contains("increase")) {
+      const index = e.target.dataset.index;
+      if (cart[index].quantity < 10) cart[index].quantity++;
+    } 
+    else if (e.target.classList.contains("decrease")) {
+      const index = e.target.dataset.index;
+      if (cart[index].quantity > 1) cart[index].quantity--;
+    } 
+    else if (e.target.classList.contains("remove-btn")) {
+      cart.splice(e.target.dataset.index, 1);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+  });
+
+  updateBtn.addEventListener("click", () => {
+    const qtyInputs = document.querySelectorAll(".qty-input");
+    qtyInputs.forEach(input => {
+      const index = input.dataset.index;
+      let qty = parseInt(input.value);
+      cart[index].quantity = qty < 1 ? 1 : qty > 10 ? 10 : qty;
+    });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+    alert("Cart updated!");
+  });
+
+  renderCart();
+});
+</script>
+
+
+
+<script src="script.js"></script>
+<script>
+document.getElementById("checkoutBtn").addEventListener("click", () => {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  if (cart.length === 0) {
+    alert("Your cart is empty. Please add products before proceeding to checkout.");
+    return;
+  }
+
+  // Cart has items → Go to Billing Page
+  window.location.href = "./Billing.html";
+});
+</script>
+
+<!-- SCRIPT TAG -->
+<script src="script.js"></script>
+<script src="seachscript.js"></script>
+
+</body>
+</html>

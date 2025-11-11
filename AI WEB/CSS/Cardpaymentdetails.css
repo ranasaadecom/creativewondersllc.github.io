@@ -1,0 +1,367 @@
+
+  .payment-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  font-family: inherit;
+}
+
+.pay-title {
+  color: #1b1b4e;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.pay-box {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.pay-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.pay-option:last-of-type {
+  border-bottom: none;
+}
+
+.pay-option input {
+  cursor: pointer;
+}
+
+.pay-option.selected {
+  color: #1b1b4e;
+  font-weight: 600;
+}
+
+.card-form {
+  margin-top: 12px;
+}
+
+.card-form label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.card-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease;
+  margin-bottom: 12px; /* Space below input */
+}
+
+.card-form input[type="text"]:focus {
+  border-color: #1b1b4e;
+}
+
+
+.card-input {
+  position: relative;
+}
+
+.card-input input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 80px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.card-input input:focus {
+  border-color: #1b1b4e;
+}
+
+.card-logos {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 4px;
+}
+
+.card-logos img {
+  height: 22px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.row input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.row input:focus {
+  border-color: #1b1b4e;
+}
+
+.review-order-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  background: #1b1b4e;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-order-btn:hover {
+  background: #35357d;
+}
+
+.review-order-btn:disabled {
+  background: #9da0b3 !important;
+}
+
+
+.payment-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.popup-box {
+  background: white;
+  padding: 35px 45px;
+  border-radius: 14px;
+  text-align: center;
+  font-family: inherit;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+  position: relative; /* <-- Add this */
+}
+
+
+/* Loader (green rotating border) */
+.loader {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #d1f5d1;
+  border-top: 5px solid #2ecc71;
+  border-radius: 8px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Success check icon (hidden initially) */
+.success-check {
+  display: none;
+  font-size: 38px;
+  color: #fff;
+  background: #2ecc71;
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-popup p {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #1b1b4e;
+  font-weight: 500;
+}
+
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff3c3c; /* Red */
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  display: none; /* <-- HIDDEN AT FIRST */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.25s;
+  border: none;
+}
+
+.close-popup.show {
+  display: flex; /* <-- will show after success */
+}
+
+
+
+/* ==============RESPONSIVE CODE FOR MOBILE================  */
+/* ==============RESPONSIVE CODE FOR MOBILE================  */
+/* ==============RESPONSIVE CODE FOR MOBILE================  */
+
+
+/* ================================
+   TABLET (≤ 768px)
+================================ */
+@media (max-width: 768px) {
+
+  .payment-wrapper {
+    max-width: 90%;
+    padding: 18px;
+  }
+
+  .pay-title {
+    font-size: 18px;
+  }
+
+  .pay-box {
+    padding: 16px;
+  }
+
+  .pay-option {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+
+  .card-form label {
+    font-size: 12px;
+  }
+
+  .card-form input,
+  .row input {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  .review-order-btn {
+    font-size: 14px;
+    padding: 11px;
+  }
+
+  .popup-box {
+    width: 90%;
+    padding: 30px 24px;
+  }
+}
+
+/* ================================
+   MOBILE (≤ 480px)
+================================ */
+@media (max-width: 480px) {
+
+  .payment-wrapper {
+    padding: 16px;
+    margin: 25px auto;
+  }
+
+  .pay-title {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .pay-option {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .card-input input {
+    padding-right: 60px; /* ensure logos don’t overlap text */
+  }
+
+  .card-logos img {
+    height: 18px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .row input {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .review-order-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .payment-popup {
+    padding: 10px;
+  }
+
+  .popup-box {
+    width: 92%;
+    padding: 26px 18px;
+  }
+
+  .loader {
+    width: 38px;
+    height: 38px;
+  }
+
+  .success-check {
+    width: 48px;
+    height: 48px;
+    font-size: 32px;
+  }
+}
+
+/* ================================
+   VERY SMALL DEVICES (≤ 360px)
+================================ */
+@media (max-width: 360px) {
+
+  .pay-title {
+    font-size: 16px;
+  }
+
+  .popup-box {
+    padding: 22px 14px;
+  }
+
+  .review-order-btn {
+    font-size: 13px;
+  }
+
+  .card-form input,
+  .row input {
+    font-size: 13px;
+  }
+}
