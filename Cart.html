@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Creative Wonders LLC</title>
 <link rel="icon" href="./img/logo.png" type="image/png" />
-<!-- Favicon as shown in the screenshot -->
 <link rel="icon" href="https://cdn.prym.com/media/favicon/default/prym_favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="./style.css" />
-<link rel="stylesheet" href="./CSS/Cart.css"
+<link rel="stylesheet" href="./CSS/Cart.css" />
 </head>
 <body>
 
@@ -44,114 +43,80 @@
 
   <div class="account-links">
     <a id="registerBtn" aria-label="Register for Account">Register for Account</a>
-  <a id="loginBtn" aria-label="Login to your account">Login</a>
+    <a id="loginBtn" aria-label="Login to your account">Login</a>
     <a href="./Cart.html" style="text-decoration:none;">
-  <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
-    <svg viewBox="0 0 24 24">
-      <path d="M7 18a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0zM3 6h2l3 9h11l3-9H7"></path>
-    </svg>
+      <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 18a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0zM3 6h2l3 9h11l3-9H7"></path>
+        </svg>
+      </div>
+    </a>
   </div>
-</a>
-
-  </div>
-
-
-
 
   <!-- Modal Overlay -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal" id="modalBox">
-    <span class="close-modal" id="closeModal">&times;</span>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalBox">
+      <span class="close-modal" id="closeModal">&times;</span>
 
-    <!-- Register Form -->
-    <div id="registerForm">
-      <h2>Register Yourself</h2>
-      <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Register</button>
-      </form>
-      <p class="toggle-link" id="toLogin">Already have an account? Login</p>
-    </div>
+      <!-- Register Form -->
+      <div id="registerForm">
+        <h2>Register Yourself</h2>
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Register</button>
+        </form>
+        <p class="toggle-link" id="toLogin">Already have an account? Login</p>
+      </div>
 
-    <!-- Login Form -->
-    <div id="loginForm" style="display:none;">
-      <h2>Login</h2>
-      <form>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-      </form>
-      <p class="toggle-link" id="toRegister">Don't have an account? Register</p>
+      <!-- Login Form -->
+      <div id="loginForm" style="display:none;">
+        <h2>Login</h2>
+        <form>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p class="toggle-link" id="toRegister">Don't have an account? Register</p>
+      </div>
     </div>
   </div>
-</div>
 </header>
 
-<!-- Navigation menu -->
-<!-- <nav class="main-nav" aria-label="Primary Navigation">
-  <ul>
-    <li>
-      Products
-      <ul>
-        <li>Sub Product 1</li>
-        <li>Sub Product 2</li>
-        <li>Sub Product 3</li>
-      </ul>
-    </li>
-    <li><a href="#">Store Support</a></li>
-    <li><a href="#">Dress Form Program</a></li>
-    <li><a href="#">Subscribe</a></li>
-  </ul>
-</nav> -->
-
-
-<!-- WWW -->
-   <!-- main nav -->
-      <nav class="main-nav" aria-label="Main navigation">
-        <div class="nav-left">
-          <div class="nav-item" tabindex="0">Products
-            <div class="mega" role="menu" aria-hidden="true">
-              <div class="colwrap">
-                <div class="col">
-                  <h4>Categories</h4>
-                  <a href="#">Pet supplies</a>
-                  <a href="#">Home Decor</a>
-                  <a href="#">Kitchen Gadgets</a>
-                  <!-- <a href="#">Fasteners & Closures</a> -->
-                </div>
-                <div class="col">
-                  <!-- <h4>Accessories</h4> -->
-                  <a href="#">Health & Wellness</a>
-                  <a href="#">Kids & Baby</a>
-                  <a href="#">Snacks</a>
-                  <!-- <a href="#">Cutting Mats</a> -->
-                </div>
-                <div class="col">
-                  <!-- <h4>Brands</h4> -->
-                  <a href="#">Tools & Accesories</a>
-                  <a href="#">Beauty</a>
-                  <!-- <a href="#">Prym</a> -->
-                  <!-- <a href="#">Others</a> -->
-                </div>
-              </div>
-            </div>
+<!-- Main nav -->
+<nav class="main-nav" aria-label="Main navigation">
+  <div class="nav-left">
+    <div class="nav-item" tabindex="0">Products
+      <div class="mega" role="menu" aria-hidden="true">
+        <div class="colwrap plist">
+          <div class="col">
+            <h4>Categories</h4>
+            <a href="#">Pet supplies</a>
+            <a href="#">Home Decor</a>
+            <a href="#">Kitchen Gadgets</a>
           </div>
-          <a href="index.html"><div class="nav-item">Home</div></a>
-<a href="About_Us.html"><div class="nav-item">About Us</div></a>
-<a href="FAQs.html"><div class="nav-item">FAQs</div></a>
-          <!-- <div class="nav-item">Subscribe</div> -->
+          <div class="col">
+            <a href="#">Health & Wellness</a>
+            <a href="#">Kids & Baby</a>
+            <a href="#">Snacks</a>
+          </div>
+          <div class="col">
+            <a href="#">Tools & Accesories</a>
+            <a href="#">Beauty</a>
+          </div>
         </div>
+      </div>
+    </div>
+    <a href="index.html"><div class="nav-item">Home</div></a>
+    <a href="About_Us.html"><div class="nav-item">About Us</div></a>
+    <a href="FAQs.html"><div class="nav-item">FAQs</div></a>
+  </div>
 
-        <div style="margin-left:auto;color:var(--muted);font-weight:600">Free shipping on orders over $60</div>
-      </nav>
-      <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
- <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
-  <!-- ===================OFFICIAL HEADER  SECTION ENDS HERE ==================-->
-</head>
-<body>
+  <div style="margin-left:auto;color:var(--muted);font-weight:600">Free shipping on orders over $60</div>
+</nav>
 
+<!-- CART CONTENT -->
 <div class="cart-container">
   <table class="cart-table">
     <thead>
@@ -164,7 +129,6 @@
       </tr>
     </thead>
     <tbody id="cart-body">
-
     </tbody>
   </table>
 
@@ -181,31 +145,20 @@
 
     <div class="cart-total">
       <h3>Cart Total</h3>
-      <p><span>Subtotal</span><span id="subtotal">54.00 USD</span></p>
-      <p><span>Shipping</span><span>Free for orders over 60$</span></p>
-      <p><strong>Total</strong><strong id="total">54.00 USD</strong></p>
+      <p><span>Subtotal</span><span id="subtotal">0.00 USD</span></p>
+      <p><span>Shipping</span><span id="shipping">0.00 USD</span></p>
+      <p><strong>Total</strong><strong id="total">0.00 USD</strong></p>
       <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
     </div>
   </div>
 </div>
 
-
-
-
-<!-- ===================OFFICIAL F0OTER SECTION ==================-->
- <!-- ===================OFFICIAL F0OTER SECTION ==================-->
-  <!-- ===================OFFICIAL F0OTER SECTION ==================-->
-
+<!-- FOOTER (kept minimal for brevity) -->
 <div class="footer-container" style="display:flex; align-items:center; justify-content:space-between; width:100%; padding:20px 40px;">
-
-  <!-- Left Logo -->
   <div class="footer-logo">
     <img src="img/logo.png" alt="Creative Wonders Logo" style="height:90px; object-fit:contain;" />
   </div>
-
-  <!-- Newsletter + Links (Center) -->
   <div style="flex:1; text-align:center;">
-
     <section class="newsletter-subscribe" aria-label="Newsletter Subscription">
       <p><strong>Stay in the loop! Do not miss out on product updates and promotions.</strong></p>
       <form>
@@ -214,7 +167,6 @@
         <button type="submit">Subscribe</button>
       </form>
     </section>
-
     <footer>
       <nav aria-label="Footer Quicklinks">
         <ul style="display:flex; gap:25px; justify-content:center;">
@@ -227,18 +179,12 @@
       </nav>
       <small>Copyright © 2025 Creative Wonders LLC all rights reserved!</small>
     </footer>
-
   </div>
-
-  <!-- Right Logo (Correct Position) -->
   <div>
     <img class="Rightlogo" src="img/bddemologo.png" alt="BD Demo Logo" style="height:90px; object-fit:contain; margin-left:20px;" />
   </div>
-
 </div>
 
-  
-<!-- Footer currency selector -->
 <div class="currency-selector">
   United States (USD $)
   <select aria-label="Select Currency">
@@ -248,52 +194,67 @@
   </select>
 </div>
 
-
-
-
-<!-- SCRIPT TAG -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const cartBody = document.getElementById("cart-body");
   const updateBtn = document.getElementById("updateCart");
   const subtotalEl = document.getElementById("subtotal");
   const totalEl = document.getElementById("total");
-  const shippingEl = document.querySelector(".cart-total p:nth-child(2) span:last-child");
+  const shippingEl = document.getElementById("shipping");
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  function toNumber(priceString) {
-    return parseFloat(priceString.replace(/[^0-9.]/g, "")) || 0;
+  // Disable Update Cart button initially
+  updateBtn.disabled = true;
+  updateBtn.style.opacity = "0.5";
+  updateBtn.style.cursor = "not-allowed";
+
+  function enableUpdateBtn() {
+    updateBtn.disabled = false;
+    updateBtn.style.opacity = "1";
+    updateBtn.style.cursor = "pointer";
   }
 
+  function disableUpdateBtn() {
+    updateBtn.disabled = true;
+    updateBtn.style.opacity = "0.5";
+    updateBtn.style.cursor = "not-allowed";
+  }
+
+  function toNumber(priceString) {
+    return parseFloat(String(priceString).replace(/[^0-9.]/g, "")) || 0;
+  }
+
+  // -----------------------------
+  // RENDER CART (No Total Update)
+  // -----------------------------
   function renderCart() {
     cartBody.innerHTML = "";
-    let subtotal = 0;
 
-    if (cart.length === 0) {
+    if (!cart || cart.length === 0) {
       cartBody.innerHTML = `<tr><td colspan="5" style="text-align:center;">Your cart is empty</td></tr>`;
-      subtotalEl.textContent = "0 USD";
-      shippingEl.textContent = "0 USD";
-      totalEl.textContent = "0 USD";
+      subtotalEl.textContent = "0.00 USD";
+      shippingEl.textContent = "0.00 USD";
+      totalEl.textContent = "0.00 USD";
+      disableUpdateBtn();
       return;
     }
 
     cart.forEach((item, index) => {
       const itemPrice = toNumber(item.price);
-      const itemSubtotal = itemPrice * item.quantity;
-      subtotal += itemSubtotal;
+      const itemSubtotal = itemPrice * (item.quantity || 1);
 
       const row = document.createElement("tr");
       row.innerHTML = `
         <td class="cart-item">
-          <img src="${item.image}" alt="${item.name}">
-          <span class="cart-item-title">${item.name}</span>
+          <img src="${item.image || ''}" alt="${item.name || ''}" style="width:60px;height:auto;object-fit:contain;">
+          <span class="cart-item-title">${item.name || ''}</span>
         </td>
-        <td>${item.price}</td>
+        <td>${itemPrice.toFixed(2)} USD</td>
         <td>
           <div class="qty-control">
             <button class="qty-btn decrease" data-index="${index}">-</button>
-            <input class="qty-input" type="number" min="1" max="10" value="${item.quantity}" data-index="${index}">
+            <input class="qty-input" type="number" min="1" max="10" value="${item.quantity || 1}" data-index="${index}">
             <button class="qty-btn increase" data-index="${index}">+</button>
           </div>
         </td>
@@ -302,67 +263,102 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       cartBody.appendChild(row);
     });
+  }
 
+  // -----------------------------
+  // CALCULATE AND UPDATE TOTALS
+  // -----------------------------
+  function updateTotals() {
+    let subtotal = cart.reduce((sum, item) => sum + (toNumber(item.price) * item.quantity), 0);
     let shipping = (subtotal < 60 && subtotal > 0) ? 5 : 0;
-    shippingEl.textContent = shipping > 0 ? `${shipping.toFixed(2)} USD` : "Free";
-
     subtotalEl.textContent = subtotal.toFixed(2) + " USD";
+    shippingEl.textContent = shipping ? shipping.toFixed(2) + " USD" : "Free";
     totalEl.textContent = (subtotal + shipping).toFixed(2) + " USD";
   }
 
+  // -----------------------------
+  // CLICK HANDLER (Enable Update Button)
+  // -----------------------------
   document.addEventListener("click", e => {
     if (e.target.classList.contains("increase")) {
       const index = e.target.dataset.index;
-      if (cart[index].quantity < 10) cart[index].quantity++;
+      if (cart[index] && cart[index].quantity < 10) cart[index].quantity++;
+      enableUpdateBtn();
     } 
     else if (e.target.classList.contains("decrease")) {
       const index = e.target.dataset.index;
-      if (cart[index].quantity > 1) cart[index].quantity--;
+      if (cart[index] && cart[index].quantity > 1) cart[index].quantity--;
+      enableUpdateBtn();
     } 
     else if (e.target.classList.contains("remove-btn")) {
       cart.splice(e.target.dataset.index, 1);
+      enableUpdateBtn();
+
+      if (cart.length === 0) { // reset totals if cart is empty
+        subtotalEl.textContent = "0.00 USD";
+        shippingEl.textContent = "0.00 USD";
+        totalEl.textContent = "0.00 USD";
+        disableUpdateBtn();
+      }
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
     renderCart();
   });
 
+  // -----------------------------
+  // UPDATE CART BUTTON
+  // -----------------------------
   updateBtn.addEventListener("click", () => {
     const qtyInputs = document.querySelectorAll(".qty-input");
+
     qtyInputs.forEach(input => {
       const index = input.dataset.index;
-      let qty = parseInt(input.value);
-      cart[index].quantity = qty < 1 ? 1 : qty > 10 ? 10 : qty;
+      let qty = parseInt(input.value) || 1;
+      if (cart[index]) cart[index].quantity = qty < 1 ? 1 : qty > 10 ? 10 : qty;
     });
+
     localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Calculate totals after quantity changes
+    updateTotals();
     renderCart();
     alert("Cart updated!");
+    disableUpdateBtn();
   });
 
+  // -----------------------------
+  // INITIAL LOAD
+  // -----------------------------
   renderCart();
+  updateTotals(); // Update totals for existing products
+
+  // -----------------------------
+  // LISTEN FOR STORAGE EVENTS
+  // -----------------------------
+  window.addEventListener('storage', () => {
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+    renderCart();
+    updateTotals(); // Auto-update totals whenever products are added from another page
+  });
+
+  // -----------------------------
+  // CHECKOUT BUTTON
+  // -----------------------------
+  document.getElementById("checkoutBtn").addEventListener("click", () => {
+    let cartNow = JSON.parse(localStorage.getItem("cart")) || [];
+    if (cartNow.length === 0) {
+      alert("Your cart is empty. Please add products before proceeding to checkout.");
+      return;
+    }
+    window.location.href = "./Billing.html";
+  });
 });
 </script>
 
 
-
 <script src="script.js"></script>
-<script>
-document.getElementById("checkoutBtn").addEventListener("click", () => {
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  if (cart.length === 0) {
-    alert("Your cart is empty. Please add products before proceeding to checkout.");
-    return;
-  }
-
-  // Cart has items → Go to Billing Page
-  window.location.href = "./Billing.html";
-});
-</script>
-
-<!-- SCRIPT TAG -->
-<script src="script.js"></script>
-<script src="seachscript.js"></script>
 
 </body>
 </html>

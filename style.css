@@ -859,6 +859,61 @@ a:hover, a:focus {
     height: 120px !important;
     margin-top: 0 !important;
   }
+
+
+  /* .plist{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+    
+  } */
+/* 
+  .mega{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 200px !important;
+  }
+
+  .mega a{
+    width: 200px !important;
+  } */
+
+
+  header .search-bar button svg {
+    fill: white;
+    width: 17px;
+    height: 17px;
+  }
+  
+   /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+      /* big products mega dropdown (shown on hover) */
+    .mega {
+      position:absolute;
+      left:0;
+      top:100%;
+      transform:translateY(8px);
+      width:270px; /* wide panel like screenshot */
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.08);
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      display:none;
+      padding:20px;
+      z-index:40;
+    }
+
+    .nav-left .nav-item:hover .mega,
+    .nav-left .nav-item:focus-within .mega {
+      display:block;
+    }
+
+    /* .mega .colwrap{display:flex; gap:1px;} */
+    /* .mega .col{
+      width:33.33%;
+    } */
+    .mega h4{margin:0 0 8px;font-size:15px;color:var(--deep-purple);font-family:Montserrat}
+    .mega a{display:block;padding:6px 0;color:#222;text-decoration:none}
+    .mega a:hover{color:var(--blue-accent); text-decoration:underline}
+
 }
 
 /* Mobile (width ≤ 768px) */
@@ -924,6 +979,59 @@ a:hover, a:focus {
     width: 100%;
     margin-top: 8px;
   }
+  /* 000000000000000000 */
+  /* .plist{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+    
+  }
+
+  .mega{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 200px !important;
+  }
+
+  .mega a{
+    width: 200px !important;
+  } */
+  /* 111111111111111111 */
+
+  header .search-bar button svg {
+    fill: white;
+    width: 14px;
+    height: 14px;
+  }
+  
+    /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+      /* big products mega dropdown (shown on hover) */
+    .mega {
+      position:absolute;
+      left:0;
+      top:100%;
+      transform:translateY(8px);
+      width:270px; /* wide panel like screenshot */
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.08);
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      display:none;
+      padding:20px;
+      z-index:40;
+    }
+
+    .nav-left .nav-item:hover .mega,
+    .nav-left .nav-item:focus-within .mega {
+      display:block;
+    }
+
+    /* .mega .colwrap{display:flex; gap:1px;} */
+    /* .mega .col{
+      width:33.33%;
+    } */
+    .mega h4{margin:0 0 8px;font-size:15px;color:var(--deep-purple);font-family:Montserrat}
+    .mega a{display:block;padding:6px 0;color:#222;text-decoration:none}
+    .mega a:hover{color:var(--blue-accent); text-decoration:underline}
 }
 
 /* Extra Small (≤ 500px) */
@@ -951,5 +1059,63 @@ a:hover, a:focus {
   .Rightlogo {
     height: 90px !important;
   }
+
+
+    /* 000000000000000000 */
+  /* .plist{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+    
+  } */
+
+  /* .mega{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 200px !important;
+  } */
+
+  /* .mega a{
+    width: 200px !important;
+    display: none;
+  } */
+  /* 111111111111111111 */
+
+
+
+  header .search-bar button svg {
+    fill: white;
+    width: 15px;
+    height: 15px;
+  }
+  /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+      /* big products mega dropdown (shown on hover) */
+    .mega {
+      position:absolute;
+      left:0;
+      top:100%;
+      transform:translateY(8px);
+      width:270px; /* wide panel like screenshot */
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.08);
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      display:none;
+      padding:20px;
+      z-index:40;
+    }
+
+    .nav-left .nav-item:hover .mega,
+    .nav-left .nav-item:focus-within .mega {
+      display:block;
+    }
+
+    /* .mega .colwrap{display:flex; gap:1px;} */
+    /* .mega .col{
+      width:33.33%;
+    } */
+    .mega h4{margin:0 0 8px;font-size:15px;color:var(--deep-purple);font-family:Montserrat}
+    .mega a{display:block;padding:6px 0;color:#222;text-decoration:none}
+    .mega a:hover{color:var(--blue-accent); text-decoration:underline}
 }
+
 

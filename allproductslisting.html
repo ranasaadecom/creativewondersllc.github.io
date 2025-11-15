@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,11 +48,31 @@
     <a id="registerBtn" aria-label="Register for Account">Register for Account</a>
   <a id="loginBtn" aria-label="Login to your account">Login</a>
     <a href="./Cart.html" style="text-decoration:none;">
-  <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
+  <!-- <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
     <svg viewBox="0 0 24 24">
       <path d="M7 18a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0zM3 6h2l3 9h11l3-9H7"></path>
     </svg>
-  </div>
+  </div> -->
+  <div class="cart-icon" aria-label="View shopping cart" tabindex="0">
+  <svg viewBox="0 0 24 24">
+    <path d="M7 18a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0zM3 6h2l3 9h11l3-9H7"></path>
+  </svg>
+  <!-- CART COUNTER BADGE -->
+  <span id="cartCounter" style="
+      position: relative;
+      top: -9px;
+      /* bottom: 100px; */
+      left: -10px;
+      /* right: 12px; */
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+      display: none;
+  ">0</span>
+</div>
+
 </a>
 
   </div>
@@ -114,7 +135,7 @@
         <div class="nav-left">
           <div class="nav-item" tabindex="0">Products
             <div class="mega" role="menu" aria-hidden="true">
-              <div class="colwrap">
+              <div class="colwrap plist">
                 <div class="col">
                   <h4>Categories</h4>
                   <a href="#">Pet supplies</a>
@@ -612,7 +633,7 @@ if (productData && Array.isArray(productData.thumbs)) {
       mainImg.src = overlay.dataset.originalMain;
     }
   }
-// 🛒 Add to cart (REAL FUNCTIONALITY USING PRODUCT ID)
+// 🛒 Add to cart (Quick Shop)
 addBtn.addEventListener("click", () => {
   console.log("ADD TO CART STARTED");
 
@@ -621,9 +642,8 @@ addBtn.addEventListener("click", () => {
   // ✅ Get the stored product ID set when Quick Shop opened
   const productId = parseInt(overlay.dataset.productId);
 
-  // ✅ Find product by ID (always correct)
+  // ✅ Find product by ID
   const product = products.find(p => p.id === productId);
-
   if (!product) {
     console.log("PRODUCT NOT FOUND — CHECK productId or overlay.dataset.productId");
     return;
@@ -633,14 +653,13 @@ addBtn.addEventListener("click", () => {
 
   // ✅ Check if product already in cart
   const existing = cart.find(item => item.id === product.id);
-
   if (existing) {
     existing.quantity += qty;
   } else {
     cart.push({
       id: product.id,
       name: product.title,
-      price: product.price, // keep "$" format exactly
+      price: product.price,
       image: product.image,
       quantity: qty
     });
@@ -649,18 +668,22 @@ addBtn.addEventListener("click", () => {
   // ✅ Save cart
   localStorage.setItem("cart", JSON.stringify(cart));
 
+  // ✅ Update cart counter instantly (max 240)
+  if (typeof updateCartCounter === "function") {
+    updateCartCounter();
+  }
+
   alert(`${qty} × ${product.title} added to cart!`);
 
   // ✅ Close modal
   overlay.style.display = "none";
 });
 
-
-
 });
 
 </script>
 <script src="seachscript.js"></script>
+<script src="Itemnumbers.js"></script>
 
 </body>
 </html>
