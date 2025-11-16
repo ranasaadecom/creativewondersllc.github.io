@@ -382,10 +382,10 @@ function createProductCardListView(product) {
       </div>
       <div class="product-price">${product.price}</div>
       <button class="quick-shop-btn" aria-label="Quick shop for ${product.title}">Quick shop</button>
-      <div class="heart-icon" tabindex="0" role="button" aria-label="Add ${product.title} to favorites">&#10084;</div>
+      
     `;
-  return card;
-}
+  return card;}
+// LINE FROM 385:   <div class="heart-icon" tabindex="0" role="button" aria-label="Add ${product.title} to favorites">&#10084;</div>
 
 function createProductCardGridView(product) {
   const card = document.createElement("div");
